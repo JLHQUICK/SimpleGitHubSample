@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hola Tierra</string>
+
+    <string name="hello_world">Hola, Mundo!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="users_name_edit_text">Interior-interior Su Nombre</string>
+    <string name="happy_question">¿Eres Feliz?</string>
+    <string name="answer_yes">Interno Botón Sí</string>
+    <string name="answer_no">Interno Botón No</string>
+    <string name="button_yes_hint">¿Sí?</string>
+    <string name="button_no_hint">¿No?</string>
+</resources>

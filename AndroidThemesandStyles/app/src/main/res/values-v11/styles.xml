@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Base application theme in values-v11. -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- Theme customization for Android API 11 - 13 -->
+    </style>
+
+</resources>

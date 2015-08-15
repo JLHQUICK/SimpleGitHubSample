@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- This is known as a style sheet which is a collection of styles that
+    you can use in your application android:Theme.Holo.Light.DarkActionBar-->
+
+    <!-- Base application theme in values-v14 To make this work, and due to fundamental Android design changes for themes, I had to use a Theme.AppCompat style as the parent. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Theme customization for Android API 14+ -->
+
+        <!-- http://developer.android.com/reference/android/R.styleable.html#Theme
+        Provides a list of attributes you can override -->
+
+        <!-- You can change the text color in all widgets across the whole app
+        I have a feeling that these color values #ffb62a23 need to be setup elsewhere for it to work across versions. It really is better to use a values directory location anyway.
+         -->
+        <item name="android:editTextColor">@/color/color3</item>
+        <item name="android:textColorPrimary">@color/color1</item>
+        <item name="android:textColorSecondary">@color/color1</item>
+        <item name="android:textColorTertiary">@color/color1</item>
+        <item name="android:textColorPrimaryInverse">@color/color1</item>
+        <item name="android:textColorSecondaryInverse">@color/color1</item>
+        <item name="android:textColorTertiaryInverse">@color/color1</item>
+
+        <!-- You can change the background #ffedeba6 drawable/default_background @drawable/default_background @color/color2 -->
+        <!--This had to be done as a drawable or colors object because setting the color using a hex value did not work with some devices-->
+        <item name="android:windowBackground">@color/color2</item>
+
+        <!-- Change the font family with API 16+
+        android:fontFamily="sans-serif"
+        android:fontFamily="sans-serif-light"
+        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="sans-serif-thin" -->
+        <item name="android:fontFamily">sans-serif</item>
+
+        <item name="android:textStyle">bold</item>
+
+        <!-- More font stuff from URL above
+        android:fontFamily	 Font family (named by string) for the text.
+        android:shadowColor	 Place a shadow of the specified color behind the text.
+        android:shadowDx	 Horizontal offset of the shadow.
+        android:shadowDy	 Vertical offset of the shadow.
+        android:shadowRadius	 Radius of the shadow.
+        android:textAllCaps	 Present the text in ALL CAPS.
+        android:textColor	 Text color.
+        android:textColorHighlight	 Color of the text selection highlight.
+        android:textColorHint	 Color of the hint text.
+        android:textColorLink	 Color of the links.
+        android:textSize	 Size of the text.
+        android:textStyle	 Style (bold, italic, bolditalic) for the text.
+        android:typeface	 Typeface (normal, sans, serif, monospace) for the text.
+        -->
+
+    </style>
+
+    <!-- You can define styles for single widgets. You can then assign that style to the
+     element in activity_main.xml with style="@style/TextView" for example -->
+    <style name="TextView1">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- You can inherit a style you defined as well. You can also override parts.
+    When a parent is named, it means that the style will inherit any style information that is defined in the parent...yet will override the parent style if present here.
+     You can't do this with Android styles, but only with yours. -->
+    <style name="EditText" parent="@style/TextView1">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- You can both inherit and add to a style as well
+     This dot notation is a way to inherit and "add" to a style...Really multiple inheritance. Here we are saying that this style (referred to as "TextView1.TextView2") functions as the styles set in TextView1, TextView2,
+      and whatever style elements are setup in the braces below.-->
+    <style name="TextView1.TextView2">
+        <item name="android:padding">30dp</item>
+    </style>
+
+    <!-- You just keep adding periods to add to additional styles
+     Here we are inheriting TextView1, inheriting/layering/overriding it with TextView2, inheriting/layering/overriding it with TextView3 and then layering/overriding it with any properties below-->
+    <style name="TextView1.TextView2.TextView3">
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <!-- You can also define styles that are applied automatically without needing
+    to define style in activity_main by overriding settings
+     -->
+
+    <!--
+    <style name="TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">55sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    -->
+
+    <!-- In the graphical layout you can try different default themes
+    by clicking on the Theme button
+    -->
+
+</resources>

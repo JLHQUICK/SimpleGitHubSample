@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--This is refered to as @color/<name of element below> and seems to be needed by newer android versions.-->
+    <color name="color1">#ffb62a23</color>
+    <color name="color2">#ffedeba6</color>
+    <color name="color3">#00ff00</color>
+</resources>

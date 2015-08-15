@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This had to be done as a drawable object because setting the color using a hex value did not work with some devices-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#ffedeba6"/>
+</shape>

@@ -12,8 +12,9 @@
 
         <!-- You can change the text color in all widgets across the whole app
         I have a feeling that these color values #ffb62a23 need to be setup elsewhere for it to work across versions. It really is better to use a values directory location anyway.
+        IF YOU GET TOP LEVEL ERRORS. Highlight the element, press Alt-Enter, Uninject language/reference, save, exit, restart.
          -->
-        <item name="android:editTextColor">@/color/color3</item>
+        <item name="android:editTextColor">@color/color3</item>
         <item name="android:textColorPrimary">@color/color1</item>
         <item name="android:textColorSecondary">@color/color1</item>
         <item name="android:textColorTertiary">@color/color1</item>
